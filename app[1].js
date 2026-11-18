@@ -1,0 +1,4 @@
+const questions=[{text:'Which tag is a heading?',choices:['h1','p','div'],answer:0},{text:'Which language styles a page?',choices:['CSS','SQL','C++'],answer:0},{text:'How many days in a week?',choices:['5','7','9'],answer:1}];
+let index=0,score=0,answered=false;
+function render(){document.getElementById('question').textContent=questions[index].text;document.getElementById('feedback').textContent='';answered=false;/* TODO: create answer buttons with textContent; accept one click, update score and feedback */}
+document.getElementById('next').onclick=()=>{/* TODO: require an answer, advance or show final score out of 3 */};render();
